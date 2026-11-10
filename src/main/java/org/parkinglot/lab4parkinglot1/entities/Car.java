@@ -17,13 +17,13 @@ public class Car {
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "owner_id", nullable = false)
-    private Car owner;
+    private User owner;
 
-    public Car getOwner() {
+    public User getOwner() {
         return owner;
     }
 
-    public void setOwner(Car owner) {
+    public void setOwner(User owner) {
         this.owner = owner;
     }
 
